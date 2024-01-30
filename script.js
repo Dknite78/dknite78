@@ -1,15 +1,17 @@
 function startquiz() 
 {
-  // Hide login
-  document.getElementById("login").style.display = "none";
-  // Show quiz
-  document.getElementById("quiz").style.display = "block";
   // Get the username value from the textbox
   var username = document.getElementById("usern").value;
   // Store the username in localStorage
   localStorage.setItem("storedUsername", username);
   // Call a function to display the stored username
   displayStoredUsername();  
+
+    // Hide login
+  document.getElementById("login").style.display = "none";
+  // Show quiz
+  document.getElementById("quiz").style.display = "block";
+  
 }  
 
 function displayStoredUsername() 
